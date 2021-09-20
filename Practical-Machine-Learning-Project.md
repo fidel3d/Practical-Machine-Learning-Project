@@ -128,7 +128,7 @@ corrplot(
     insig = "blank"
 )
 ```
-
+![Correlation Matrix](/images/correlation-variables.png)
 The graphs does show that there are some variable that are correlated, however, I don't think it will affect too much the model
 
 
@@ -146,6 +146,7 @@ modelDT <- rpart(classe ~ ., data=trainData, method="class")
 prp(modelDT)
 ```
 
+![Decision Tree](/images/decision-tree.png)
 
 Prediction and Confusion Matrix for Decision Tree Model.
 ```{r}
